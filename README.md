@@ -1,37 +1,179 @@
-## Welcome to GitHub Pages
 
-You can use the [editor on GitHub](https://github.com/JordanJilesASC4/ASCTechProject/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
-
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
-
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/JordanJilesASC4/ASCTechProject/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+<html>
+    <head>
+        <!-- JQuery -->
+        <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+       
+        <!-- Custom js-->
+        <script src="Site.js"></script>  
+        
+        <!-- Custom (S)CSS -->
+        <link href="Site.css" rel="stylesheet">
+    
+        <!-- Google Font API's-->
+        <link href='https://fonts.googleapis.com/css?family=Nosifer' rel='stylesheet'>
+        <link href='https://fonts.googleapis.com/css?family=Vast Shadow' rel='stylesheet'>
+    
+    
+        <title>S u n L u x u r y Apparel</title>
+    
+    <script type="text/javascript">
+            $(window).on('scroll', function() {
+                if($(window).scrollTop()) {
+                  $('nav').addClass('black');
+                }
+                else {
+                  $('nav').removeClass('black');           
+                }
+        })
+        </script>
+    </head>
+    
+    <body>
+    <div class="wrapper">
+        <nav>
+                   
+            <div class="logo"><a href="Site.html" itemprop="url">S u n - L u x u r y</a></div>
+            <ul>
+                <li><a href="Media.html">Media</a></li>
+                <li><a href="Apparel2.html">Apparel</a></li>
+                <li><a href="About.html">About</a></li>
+                <li><a href="ContactPage.html">Contact</a></li>
+                <li><a class="active" href="Site.html">Home</a></li>
+            </ul>
+        </nav>
+        <section class="backImage"></section>
+    </div>
+    </body>
+    
+    
+    
+    
+    <!-- Timer 
+    <p id="countDown"></p>
+    <script>
+    // Set the date we're counting down to
+    var countDownDate = new Date("Sep 5, 2018 15:37:25").getTime();
+    // Update the count down every 1 second
+    var x = setInterval(function() {
+      // Get todays date and time
+      var now = new Date().getTime();
+      // Find the distance between now an the count down date
+      var distance = countDownDate - now;
+      // Time calculations for days, hours, minutes and seconds
+      var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+      // Display the result in the element with id="demo"
+      document.getElementById("countDown").innerHTML = days + "d " + hours + "h "
+      + minutes + "m " + seconds + "s ";
+      // If the count down is finished, write some text 
+      if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("countDown").innerHTML = "EXPIRED";
+      }
+    }, 1000);
+    </script>
+    -->
+    
+    
+    
+    <div class="newsbox">
+            
+        <input type="radio" name="images" id='i1' checked>
+        <input type="radio" name="images" id='i2'>
+        <input type="radio" name="images" id='i3'>
+        
+        
+                <div class="boxImage" id='one'>
+                    <img src="DarkStars.jpg">
+                    <label for="i1" class="pre"></label> 
+                    <label for="i2" class="nxt"></label>     
+                    <div class="wordPic1">Welcome to S u n L u x u r y, the future of men's fashion.</div>         
+                    <div class="underText1"></div>                    
+                </div>
+                
+        
+        
+                <div class="boxImage" id='two'>
+                    <img src="White1.png">
+                    <label for="i1" class="pre"></label>
+                    <label for="i3" class="nxt"></label>
+                    <div class="wordPic2">We strive to develop people into the best version of themselves.</div>
+                    <div class="underText2"></div>
+                </div>
+            
+    
+    
+                    
+                
+                <div class="boxImage" id='three'>
+                    <img src="Prototype.jpg">
+                    <label for="i2" class="pre"></label>
+                    <label for="i3" class="nxt"></label>
+                    <div class="wordPic3">High end. Affordable. The best brand under the Sun.</div>
+                    <div class="underText3"></div> 
+                </div>
+                
+                
+    <div class="dotnav">
+        <label class="dots" id='dot1' for'i1'></label>
+        <label class="dots" id='dot2' for'i2'></label>
+        <label class="dots" id='dot3' for'i3'></label>
+    </div>
+    
+    
+    
+    
+    
+    
+    <!-- Youtube viedo embed
+    <div class="vidBox">
+            <object data="https://www.youtube.com/embed/konRH1u-Wj4"
+            width= "1000" height="410.8"></object>
+    </div>
+    -->
+    
+    
+      
+    
+    
+    
+    
+    
+    
+        
+    
+    
+    
+    <!--Sideout sidebar
+    <div id= "sidebar">
+        <div class="toggle-btn" onclick="toggleSidebar()">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+        <ul>
+            <li><a href="https://www.youtube.com/channel/UCMJB2U11ZWNBp5VJ6OIP8fw" class="sidelink1">Music</a></li>
+            <li><a href="https://www.jcrew.com/" class="sidelink2">Merchandise</a></li>
+            <li><a href="ContactPage.html" class="sidelink3">Contact Us</a></li>
+        </ul>
+    </div>-->
+    
+    
+    
+    
+    
+    
+    <div class="bottom-bar">
+        <br><br>
+        
+        <center>
+        <a href="Mailto:Sunluxuryco@gmail.com"><img src="Mailbtn1.png" alt="SunLuxury" height="40px"></a>
+        <a href="https://www.instagram.com/sunluxuryco/"><img src="Insta1.png" alt="SunLuxury" height="40px"></a>
+        <a href="https://twitter.com/SunLuxuryCo"><img src="Twit1.png" alt="SunLuxury" height="40px"></a>
+        </center>
+        
+        
+    Ⓒ S u n L u x r u y 2018
